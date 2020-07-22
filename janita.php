@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "j.php";
 ulang:
 // function change(){
-        echo color("red"," 💗sabar ya jandaku💗 \n");
+        echo color("red"," 💗sabar ya janitaku💗 \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("white"," 🔹NOMOR: ");
@@ -208,7 +208,7 @@ ulang:
          }else{
          echo color("white","Ganti.");
          echo"\n💔💔💔💔\n";
-         echo color("yellow"," Sudah Jadi Janda..\n");
+         echo color("yellow"," Sudah Jadi Janita.\n");
          goto ulang;
          }
 //  }
