@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "janda.php";
+include "j.php";
 ulang:
 // function change(){
         echo color("red"," 💗sabar ya jandaku💗 \n");
