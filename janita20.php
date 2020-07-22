@@ -3,10 +3,10 @@ date_default_timezone_set('Asia/Jakarta');
 include "j.php";
 echo color("white","Token: ");
 $token = trim(fgets(STDIN));
-echo "\n".color("white","Janda mau?: y/n ");
+echo "\n".color("white","Janita mau?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
-        echo color("red","💛Janda 20ewu💛");
+        echo color("red","💛Janita 20ewu💛");
         echo "\n".color("blue","Get Code.");
         echo "\n".color("white","Sabar ya Jandaku");
         for($a=1;$a<=3;$a++){
@@ -15,7 +15,7 @@ echo "\n".color("white","Janda mau?: y/n ");
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Asik Jandaku Sudah bisa Makan')){
+        if(strpos($code1, 'Asik Janitaku Sudah bisa Makan')){
         echo "\n".color("green"," Message: ".$message);
         }else{
         echo "\n".color("white"," Message: ".$message);
