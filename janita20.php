@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "janda.php";
+include "j.php";
 echo color("white","Token: ");
 $token = trim(fgets(STDIN));
 echo "\n".color("white","Janda mau?: y/n ");
