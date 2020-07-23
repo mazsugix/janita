@@ -8,7 +8,7 @@ echo "\n".color("white","Janita mau?: y/n ");
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("red","💛Janita 20ewu💛");
         echo "\n".color("blue","Get Code.");
-        echo "\n".color("white","Sabar ya Jandaku");
+        echo "\n".color("white","Sabar ya Janitaku");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
