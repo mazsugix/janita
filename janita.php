@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "j.php";
+include "N.php";
 ulang:
 // function change(){
         echo color("red"," 💗sabar ya janitaku💗 \n");
@@ -55,7 +55,7 @@ ulang:
         echo color("white",".");
         sleep(5);
         }
-        $code1 = request('/customer_referrals/v1/campaign/enrolment', $token, '{"referral_code":"G-S52NDYW"}');
+        $code1 = request1('/customer_referrals/v1/campaign/enrolment', $token, '{"referral_code":"G-S52NDYW"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'sukses')){
         echo "\n".color("green","Message: ".$message);
@@ -69,7 +69,7 @@ ulang:
         echo color("white",".");
         sleep(15);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'sukses')){
         echo "\n".color("green","Message: ".$message);
@@ -83,7 +83,7 @@ ulang:
         echo color("white",".");
         sleep(5);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
         echo "\n".color("blue"," 🔹Voucher4.");
@@ -93,7 +93,7 @@ ulang:
         sleep(5);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EMPAT"}');
+        $boba09 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("white"," Message: ".$messageboba09);
         sleep(1);
