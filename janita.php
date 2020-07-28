@@ -67,7 +67,7 @@ ulang:
         echo "\n".color("white"," 🔹Tunggu ");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(15);
+        sleep(10);
         }
         $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -93,7 +93,7 @@ ulang:
         sleep(5);
         }
         sleep(3);
-        $boba09 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $boba09 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("white"," Message: ".$messageboba09);
         sleep(1);
